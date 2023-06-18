@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/style/app.css">
     <link rel="stylesheet" type="text/css" href="/style/header.css">
+    <link rel="stylesheet" type="text/css" href="/style/content.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Neon&display=swap" />
     <link rel="stylesheet"
@@ -355,12 +356,56 @@
             </div>
         </div>
     </div>
-    <div class="content open">
-        <div class="content-area">
+    <div class="content">
+        <div class="content__area-top">
+            <div class="content__area-top__container">
+                <div class="list-column">
+                    <h4>Công nghệ AI dự đoán, cá nhân hoá việc làm</h4>
+                    <h1>
+                        <span class="list-column-title" style="display: inline;">Phúc lợi tốt</span>
+                        dành cho bạn.
+                    </h1>
+                    <div class="group-search">
+                        <div class="group-search__frame-input">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                            <input class='group-search__input' placeholder='Tìm kiếm cơ hội việc làm' />
+                        </div>
+                        <div class="group-search_selection" onclick="toggleDropdown()">
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            <span class="city"></span>
+                            <span class="material-symbols-outlined down">
+                                expand_more
+                            </span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <input class="dropdown__input" id="searchInput"/>
+                            <div id="dropdown-list">
+                            </div>
+                          </ul>
+                    </div>
+                </div>
+                <div class="list-column">
+                    <h4>Công nghệ AI dự đoán, cá nhân hoá việc làm</h4>
+                    <h1>
+                        <span class="list-column-title" style="display: inline;">Phúc lợi tốt</span>
+                        dành cho bạn.
+                    </h1>
+                    <div class="group-search">
+                        <div class="group-search__frame-input">
+                            <input class='group-search__input' placeholder='Tìm kiếm cơ hội việc làm' />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="js/dropdownHover.js"></script>
+    <script src="js/groupDropdown.js"></script>
 </body>
 
 </html>
