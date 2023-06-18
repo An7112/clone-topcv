@@ -1,0 +1,123 @@
+#header {
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    border-bottom: 1px solid #e9eaec;
+}
+
+#header .header__layout{
+    display: flex;
+    padding: 8px 32px;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 8px;
+}
+
+.header__layout .header__layout-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 8px;
+}
+
+.header__layout-left .header__layout-brand{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__layout-brand .header__layout-logo{
+    height: 38.4px!important;
+    margin-right: 32px;
+    margin-top: 8px;
+    width: 92px!important;
+}
+
+.header__layout-left 
+.header__group-items {
+    margin: 0;
+    float: left !important;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.header__layout-left 
+.header__group-items 
+.header__item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__layout-left 
+.header__group-items 
+.header__item a{
+    font-size: 14px;
+    letter-spacing: 0.235px;
+    line-height: 20px;
+    margin: 16px 5px;
+    padding: 14px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header__layout-right{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.header__layout-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__layout-icons .dropdown-toggle span{
+    cursor: pointer;
+    background-color: #e5f7ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00b14f;
+    border-radius: 9999px;
+    font-size: 24px;
+    padding: 8px;
+}
+
+.header__layout-right .header__layout-info{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.header__layout-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.header__layout-info .fullname{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    display: block;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
