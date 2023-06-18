@@ -6,7 +6,7 @@
     border-bottom: 1px solid #e9eaec;
 }
 
-#header .header__layout{
+#header .header__layout {
     display: flex;
     padding: 8px 32px;
     flex-direction: row;
@@ -14,49 +14,106 @@
     row-gap: 8px;
 }
 
-.header__layout .header__layout-left{
+.header__layout .header__layout-left {
     display: flex;
     flex-direction: row;
     align-items: center;
     row-gap: 8px;
 }
 
-.header__layout-left .header__layout-brand{
+.header__layout-left .header__layout-brand {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header__layout-brand .header__layout-logo{
-    height: 38.4px!important;
+.header__layout-brand .header__layout-logo {
+    height: 38.4px !important;
     margin-right: 32px;
     margin-top: 8px;
-    width: 92px!important;
+    width: 92px !important;
 }
 
-.header__layout-left 
-.header__group-items {
+.header__layout-left .header__group-items {
     margin: 0;
     float: left !important;
     padding-left: 0;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
 }
 
-.header__layout-left 
-.header__group-items 
-.header__item{
+.header__layout-left .header__group-items .header__item {
     height: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    position: relative;
     justify-content: center;
 }
+.header__layout-left .header__group-items .header__item .dropdown-item {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 4px;
+    padding: 12px;
+    width: 400px;
+    background-color: white;
+    border: 1px solid #e9eaec;
+    display: none;
+    animation: dropdown-enter-animation 0.3s ease;
+}
 
-.header__layout-left 
-.header__group-items 
-.header__item a{
+.header__layout-left .header__group-items .header__item .dropdown-item.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header__layout-left .header__group-items .header__item .dropdown-item .item {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+    transition: 0.3s ease;
+}
+
+.header__layout-left .header__group-items .header__item .dropdown-item .line {
+    width: 100%;
+    height: 1px;
+    background-color: #e9eaec;
+}
+
+.header__layout-left .header__group-items .header__item .dropdown-item .item span {
+    color: #00b14f;
+    font-size: 24px;
+}
+
+.header__layout-left .header__group-items .header__item .dropdown-item .item .arrow-icon {
+    display: none;
+    margin-left: auto;
+}
+
+.header__layout-left .header__group-items .header__item .dropdown-item .item:hover .arrow-icon {
+    display: block;
+}
+
+.header__layout-left .header__group-items .header__item .dropdown-item .item:hover .item-name {
+    color: #00b14f;
+}
+
+.header__layout-left .header__group-items .header__item .dropdown-item .item .item-name {
+    color: rgb(97, 97, 97);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header__layout-left .header__group-items .header__item a {
     font-size: 14px;
     letter-spacing: 0.235px;
     line-height: 20px;
@@ -71,19 +128,19 @@
     font-weight: 600;
 }
 
-.header__layout-right{
+.header__layout-right {
     display: flex;
     flex-direction: row;
     gap: 8px;
 }
 
-.header__layout-icons{
+.header__layout-icons {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header__layout-icons .dropdown-toggle span{
+.header__layout-icons .dropdown-toggle span {
     cursor: pointer;
     background-color: #e5f7ed;
     display: flex;
@@ -95,7 +152,7 @@
     padding: 8px;
 }
 
-.header__layout-right .header__layout-info{
+.header__layout-right .header__layout-info {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -103,7 +160,7 @@
     align-items: center;
 }
 
-.header__layout-info img{
+.header__layout-info img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -111,7 +168,7 @@
     vertical-align: middle;
 }
 
-.header__layout-info .fullname{
+.header__layout-info .fullname {
     font-size: 14px;
     font-weight: 600;
     color: black;
@@ -120,4 +177,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+@keyframes dropdown-enter-animation {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
 }

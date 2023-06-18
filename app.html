@@ -21,33 +21,315 @@
                     <img class="header__layout-logo" src="https://www.topcv.vn/v3/images/topcv-logo-4.png?v=1.0.1" />
                 </a>
                 <ul class="header__group-items">
-                    <li class="header__item">
+                    <li class="header__item" data-list="vieclam">
                         <a>
                             Việc làm
                         </a>
+                        <div class="dropdown-item" id="vieclam">
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                                <span class="item-name">
+                                    Tìm việc làm
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <div class="line"></div>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    work
+                                </span>
+                                <span class="item-name">
+                                    Việc làm đã ứng tuyển
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <span class="item-name">
+                                    Việc làm đã lưu
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <div class="line"></div>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    sync_saved_locally
+                                </span>
+                                <span class="item-name">
+                                    Việc làm phù hợp
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    code_blocks
+                                </span>
+                                <span class="item-name">
+                                    Việc làm IT
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    workspace_premium
+                                </span>
+                                <span class="item-name">
+                                    Việc làm Senior
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
                     </li>
-                    <li class="header__item">
+                    <li class="header__item" data-list="hoso">
                         <a>
                             Hồ sơ & CV
                         </a>
+                        <div class="dropdown-item" id="hoso">
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    contact_page
+                                </span>
+                                <span class="item-name">
+                                    Quản lý CV
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <span class="item-name">
+                                    Quản lý Cover Letter
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <div class="line"></div>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    contact_page
+                                </span>
+                                <span class="item-name">
+                                    Mẫu CV
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <span class="item-name">
+                                    Mẫu Cover Letter
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <div class="line"></div>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    contact_page
+                                </span>
+                                <span class="item-name">
+                                    Dịch vụ tư vấn CV
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    edit_document
+                                </span>
+                                <span class="item-name">
+                                    Hướng dẫn viết CV theo ngành nghề
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    task
+                                </span>
+                                <span class="item-name">
+                                    Thư viện CV theo ngành nghề
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <div class="line"></div>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    folder_supervised
+                                </span>
+                                <span class="item-name">
+                                    TopCV Profile
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
                     </li>
-                    <li class="header__item">
+                    <li class="header__item" data-list="congty">
                         <a>
                             Công ty
                         </a>
+                        <div class="dropdown-item" id="congty">
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    apartment
+                                </span>
+                                <span class="item-name">
+                                    Danh sách công ty
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    magic_button
+                                </span>
+                                <span class="item-name">
+                                    Top công ty
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
                     </li>
-                    <li class="header__item">
+                    <li class="header__item" data-list="sunghiep">
                         <a>
                             Phát triển sự nghiệp
                         </a>
+                        <div class="dropdown-item" id="sunghiep">
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    developer_guide
+                                </span>
+                                <span class="item-name">
+                                    TopCV Contest
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                                <span class="item-name">
+                                    TopCV Skills
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <div class="line"></div>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    chart_data
+                                </span>
+                                <span class="item-name">
+                                    Trắc nghiệm tính cách MBTI
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    chart_data
+                                </span>
+                                <span class="item-name">
+                                    Trắc nghiệm MI
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
                     </li>
-                    <li class="header__item">
+                    <li class="header__item" data-list="congcu">
                         <a>
                             Công cụ
                         </a>
+                        <div class="dropdown-item" id="congcu">
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    balance
+                                </span>
+                                <span class="item-name">
+                                    Tính lương GROSS - NET
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    monitoring
+                                </span>
+                                <span class="item-name">
+                                    Tính thuế thu nhập cá nhân
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <div class="line"></div>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    database
+                                </span>
+                                <span class="item-name">
+                                    Tính lãi xuất kép
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                            <a class="item">
+                                <span class="material-symbols-outlined">
+                                    savings
+                                </span>
+                                <span class="item-name">
+                                    Lập kế hoạch tiết kiệm
+                                </span>
+                                <span class="material-symbols-outlined arrow-icon">
+                                    arrow_right_alt
+                                </span>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
+
             <div class="header__layout-right">
                 <div class="header__layout-icons">
                     <a class="dropdown-toggle">
@@ -77,6 +359,8 @@
         <div class="content-area">
         </div>
     </div>
+
+    <script src="js/dropdownHover.js"></script>
 </body>
 
 </html>
