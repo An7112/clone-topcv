@@ -186,8 +186,120 @@
     padding: 12px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     background-color: #f3f5f7;
 }
+
+.category-title{
+    color: #00b14f;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0 0 4px;
+}
+
+.category-dsc{
+    color: #6f7882;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 0;
+}
+
+.category-dsc a{
+    color: #00b14f;
+    text-decoration: underline;
+}
+
+.category-content{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 12px;
+}
+
+.category-content .category-content__item{
+    align-items: center;
+    cursor: pointer;
+    background: #dce1e6;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 23px;
+    position: relative;
+    text-align: center;
+    transition: .3s;
+}
+
+.category__image{
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+}
+
+
+.category__image a {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.category__image a img{
+    width: 100%;
+}
+
+.category__name{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.category__caption {
+    color: #00b14f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+}
+
+
+.category-content__item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    box-shadow: 0 6px 16px #b2f5d0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.category-content__item:hover {
+    box-shadow: 0 6px 16px #b2f5d0;
+    background: white;
+}
+
+.category-content__item:hover::before{
+    opacity: 1;
+    border-color: #00b14f;
+}
+
+
 
 @media (min-width: 1200px) {
     .content__area-top__container {
@@ -201,10 +313,6 @@
 }
 @media (min-width: 992px) {
     .content__area-top__container {
-        width: 970px;
-    }
-
-    .content__area {
         width: 970px;
     }
 }
