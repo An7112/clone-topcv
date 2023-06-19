@@ -141,6 +141,46 @@
     color: #00b14f;
 }
 
+.box-work-market{
+    background: rgba(33,47,63,.3);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    height: 172px;
+    margin-bottom: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.box-work-market .box-work{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 8px;
+}
+
+.box-work-market .box-work .box-work__dsc{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.box-work-market .box-work h1{
+    color: #00b14f;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.box-work-market .box-work .material-symbols-outlined{
+    padding: 8px;
+    background-color: #e7fbf0;
+    border-radius: 9999px;
+    color: #00b14f;
+}
+
 @media (min-width: 1200px) {
     .content__area-top__container {
         grid-template-columns: 1fr 1fr;

@@ -74,3 +74,13 @@ function selectItem(item) {
     dropdownToggle.innerText = selectedValue;
     toggleDropdown();
 }
+
+function clickOutside(event) {
+    var inside = document.getElementById('gr-search')
+    if(!inside.contains(event.target)){
+        isDropdownVisible = true;
+        toggleDropdown();
+    }
+}
+
+document.addEventListener('click', clickOutside)
