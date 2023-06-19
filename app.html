@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/style/app.css">
     <link rel="stylesheet" type="text/css" href="/style/header.css">
     <link rel="stylesheet" type="text/css" href="/style/content.css">
+    <link rel="stylesheet" type="text/css" href="/style/slideshow.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Neon&display=swap" />
     <link rel="stylesheet"
@@ -409,10 +410,20 @@
                 </div>
             </div>
         </div>
+        <div class="content__area">
+            <a class="slideshow-button prev" onclick="plusSlides(-1)">❮</a>
+            <a class="slideshow-button next" onclick="plusSlides(1)">❯</a>
+            <div id="slideshow-container" class="slideshow-container">
+                <div id="slideshow">
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/dropdownHover.js"></script>
     <script src="js/groupDropdownLocal.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>

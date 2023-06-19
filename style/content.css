@@ -181,14 +181,28 @@
     color: #00b14f;
 }
 
+.content__area{
+    padding: 12px;
+    margin: 0 auto;
+    position: relative;
+}
+
 @media (min-width: 1200px) {
     .content__area-top__container {
         grid-template-columns: 1fr 1fr;
         width: 1170px;
     }
+
+    .content__area{
+        width: 1170px;
+    }
 }
 @media (min-width: 992px) {
     .content__area-top__container {
+        width: 970px;
+    }
+
+    .content__area {
         width: 970px;
     }
 }
