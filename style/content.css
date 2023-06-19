@@ -94,6 +94,7 @@
     position: absolute;
     top: 100%;
     right: 0;
+    z-index: 2;
     border-radius: 4px;
     padding: 12px;
     width: 250px;
@@ -185,6 +186,7 @@
     padding: 12px;
     margin: 0 auto;
     position: relative;
+    background-color: #f3f5f7;
 }
 
 @media (min-width: 1200px) {
