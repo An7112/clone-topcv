@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/style/content.css">
     <link rel="stylesheet" type="text/css" href="/style/slideshow.css">
     <link rel="stylesheet" type="text/css" href="/style/footer.css">
+    <link rel="stylesheet" type="text/css" href="/style/jobContent.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Neon&display=swap" />
     <link rel="stylesheet"
@@ -20,7 +21,7 @@
     <div id="header">
         <div class="header__layout">
             <div class="header__layout-left">
-                <a class="header__layout-brand" href="app.html">
+                <a class="header__layout-brand" href="/app.html">
                     <img class="header__layout-logo" src="https://www.topcv.vn/v3/images/topcv-logo-4.png?v=1.0.1" />
                 </a>
                 <ul class="header__group-items">
@@ -412,125 +413,188 @@
             </div>
         </div>
         <div class="content__area">
-            <a class="slideshow-button prev" onclick="plusSlides(-4)">❮</a>
-            <a class="slideshow-button next" onclick="plusSlides(4)">❯</a>
-            <div id="slideshow-container" class="slideshow-container">
-                <div id="slideshow">
-
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="/app.html">Trang chủ</a>
+                </li>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+                <li class="nav-item">
+                    <span id="nav__vieclam"></span>
+                </li>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+                <h1 id="breadcrumb-heading"></h1>
+            </ul>
+            <div class="none-suitable-job" style="display: block;">
+                <div class="none-suitable-job__content">
+                    <img src="https://www.topcv.vn/v4/image/job-list/none-result.png" alt="None suitable job">
+                    <span>Chưa tìm thấy việc làm phù hợp với yêu cầu tìm kiếm của bạn.</span>
                 </div>
             </div>
         </div>
         <div class="content__area">
-            <h3 class="category-title">
-                Top ngành nghề nổi bật
-            </h3>
-            <p class="category-dsc">
-                Bạn muốn tìm việc mới? Xem danh sách việc làm
-                <a target="_blank" href="https://www.topcv.vn/viec-lam" class="text-highlight text-underline">
-                    tại đây
-                </a>
-            </p>
-            <div class="category-content">
-                <div class="category-content__item">
-                    <div class="category__image">
-                        <a href="https://www.topcv.vn/tim-viec-lam-kinh-doanh-ban-hang-c10001" target="_blank">
-                            <img src="	https://www.topcv.vn/v4/image/welcome/top-categories/kinh-doanh-ban-hang.png?v=2"
-                                alt="Kinh doanh / Bán hàng">
-                        </a>
-                    </div>
-                    <h4 class="category__name">
-                        Kinh doanh / Bán hàng
-                    </h4>
-                    <p class="category__caption">10.766 việc làm</p>
+            <div class="job-header">
+                <div class="interested-job" style="display: block;">
+                    <p>Việc làm có thể bạn sẽ quan tâm</p>
                 </div>
-                <div class="category-content__item">
-                    <div class="category__image">
-                        <a href="https://www.topcv.vn/tim-viec-lam-kinh-doanh-ban-hang-c10001" target="_blank">
-                            <img src="https://www.topcv.vn/v4/image/welcome/top-categories/it-phan-mem.png?v=2"
-                                alt="IT phần mềm">
+            </div>
+            <div class="job-body">
+                <div class="job__item">
+                    <div class="avatar">
+                        <a target="_blank"
+                            href="https://www.topcv.vn/brand/congnghevietnhat/tuyen-dung/ky-su-co-dien-lam-viec-tai-cong-truong-j971530.html?ta_source=JobSearchList">
+                            <img src="https://cdn-new.topcv.vn/unsafe/150x/filters:format(webp)/https://static.topcv.vn/company_logos/cong-ty-co-phan-dau-tu-xay-dung-va-cong-nghe-viet-nhat-63ec32bbd388e.jpg"
+                                class="w-100" alt="Công ty Cổ Phần đầu tư xây dựng và Công nghệ Việt Nhật"
+                                title="Kỹ Sư Cơ - Điện (Làm Việc Tại Công Trường)">
                         </a>
                     </div>
-                    <h4 class="category__name">
-                        IT phần mềm
-                    </h4>
-                    <p class="category__caption">3.044 việc làm</p>
+                    <div class="job__item-body">
+                        <div class="body-content">
+                            <div>
+                                <h3 class="title">
+                                    <a target="_blank"
+                                        href="https://www.topcv.vn/brand/congnghevietnhat/tuyen-dung/ky-su-co-dien-lam-viec-tai-cong-truong-j971530.html?ta_source=JobSearchList">
+                                        <span>Kỹ Sư Cơ - Điện (Làm Việc Tại Công Trường)</span>
+                                    </a>
+                                </h3>
+                                <a class="company" href="https://www.topcv.vn/brand/congnghevietnhat">Công ty Cổ Phần
+                                    đầu tư xây dựng và Công nghệ Việt Nhật</a>
+                            </div>
+                            <label class="title-salary">
+                                15 - 20 triệu
+                            </label>
+                        </div>
+                        <div class="info">
+                            <div class="label-content">
+                                <label class="address">
+                                    Hà Nội
+                                </label>
+                                <label class="time">
+                                    Còn
+                                    <strong>23</strong>
+                                    ngày để ứng tuyển
+                                </label>
+
+                                <label class="address">
+                                    Cập nhật 1 phút trước
+                                </label>
+                            </div>
+                            <div class="icon">
+                                <button
+                                    data-redirect-to="https://www.topcv.vn/brand/congnghevietnhat/tuyen-dung/ky-su-co-dien-lam-viec-tai-cong-truong-j971530.html?ta_source=JobSearchList"
+                                    class="btn btn-apply-now">
+                                    <span>Ứng tuyển</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="category-content__item">
-                    <div class="category__image">
-                        <a href="https://www.topcv.vn/tim-viec-lam-hanh-chinh-van-phong-c10023?sort=top_related"
-                            target="_blank">
-                            <img src="https://www.topcv.vn/v4/image/welcome/top-categories/hanh-chinh-van-phong.png?v=2"
-                                alt="Hành chính / Văn phòng">
+            </div>
+            <div class="job-body">
+                <div class="job__item">
+                    <div class="avatar">
+                        <a target="_blank"
+                            href="https://www.topcv.vn/brand/congnghevietnhat/tuyen-dung/ky-su-co-dien-lam-viec-tai-cong-truong-j971530.html?ta_source=JobSearchList">
+                            <img src="https://cdn-new.topcv.vn/unsafe/150x/filters:format(webp)/https://static.topcv.vn/company_logos/cong-ty-co-phan-dau-tu-xay-dung-va-cong-nghe-viet-nhat-63ec32bbd388e.jpg"
+                                class="w-100" alt="Công ty Cổ Phần đầu tư xây dựng và Công nghệ Việt Nhật"
+                                title="Kỹ Sư Cơ - Điện (Làm Việc Tại Công Trường)">
                         </a>
                     </div>
-                    <h4 class="category__name">
-                        Hành chính / Văn phòng
-                    </h4>
-                    <p class="category__caption">2.754 việc làm</p>
+                    <div class="job__item-body">
+                        <div class="body-content">
+                            <div>
+                                <h3 class="title">
+                                    <a target="_blank"
+                                        href="https://www.topcv.vn/brand/congnghevietnhat/tuyen-dung/ky-su-co-dien-lam-viec-tai-cong-truong-j971530.html?ta_source=JobSearchList">
+                                        <span>Kỹ Sư Cơ - Điện (Làm Việc Tại Công Trường)</span>
+                                    </a>
+                                </h3>
+                                <a class="company" href="https://www.topcv.vn/brand/congnghevietnhat">Công ty Cổ Phần
+                                    đầu tư xây dựng và Công nghệ Việt Nhật</a>
+                            </div>
+                            <label class="title-salary">
+                                15 - 20 triệu
+                            </label>
+                        </div>
+                        <div class="info">
+                            <div class="label-content">
+                                <label class="address">
+                                    Hà Nội
+                                </label>
+                                <label class="time">
+                                    Còn
+                                    <strong>23</strong>
+                                    ngày để ứng tuyển
+                                </label>
+
+                                <label class="address">
+                                    Cập nhật 1 phút trước
+                                </label>
+                            </div>
+                            <div class="icon">
+                                <button
+                                    data-redirect-to="https://www.topcv.vn/brand/congnghevietnhat/tuyen-dung/ky-su-co-dien-lam-viec-tai-cong-truong-j971530.html?ta_source=JobSearchList"
+                                    class="btn btn-apply-now">
+                                    <span>Ứng tuyển</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="category-content__item">
-                    <div class="category__image">
-                        <a href="https://www.topcv.vn/tim-viec-lam-hanh-chinh-van-phong-c10023?sort=top_related"
-                            target="_blank">
-                            <img src="https://www.topcv.vn/v4/image/welcome/top-categories/giao-duc-dao-tao.png?v=2"
-                                alt="Giáo dục / Đào tạo">
+            </div>
+            <div class="job-body">
+                <div class="job__item">
+                    <div class="avatar">
+                        <a target="_blank"
+                            href="https://www.topcv.vn/brand/congnghevietnhat/tuyen-dung/ky-su-co-dien-lam-viec-tai-cong-truong-j971530.html?ta_source=JobSearchList">
+                            <img src="https://cdn-new.topcv.vn/unsafe/150x/filters:format(webp)/https://static.topcv.vn/company_logos/cong-ty-co-phan-dau-tu-xay-dung-va-cong-nghe-viet-nhat-63ec32bbd388e.jpg"
+                                class="w-100" alt="Công ty Cổ Phần đầu tư xây dựng và Công nghệ Việt Nhật"
+                                title="Kỹ Sư Cơ - Điện (Làm Việc Tại Công Trường)">
                         </a>
                     </div>
-                    <h4 class="category__name">
-                        Giáo dục / Đào tạo
-                    </h4>
-                    <p class="category__caption">5.235 việc làm</p>
-                </div>
-                <div class="category-content__item">
-                    <div class="category__image">
-                        <a href="https://www.topcv.vn/tim-viec-lam-hanh-chinh-van-phong-c10023?sort=top_related"
-                            target="_blank">
-                            <img src="https://www.topcv.vn/v4/image/welcome/top-categories/tu-van.png?v=2" alt="Tư vấn">
-                        </a>
+                    <div class="job__item-body">
+                        <div class="body-content">
+                            <div>
+                                <h3 class="title">
+                                    <a target="_blank"
+                                        href="https://www.topcv.vn/brand/congnghevietnhat/tuyen-dung/ky-su-co-dien-lam-viec-tai-cong-truong-j971530.html?ta_source=JobSearchList">
+                                        <span>Kỹ Sư Cơ - Điện (Làm Việc Tại Công Trường)</span>
+                                    </a>
+                                </h3>
+                                <a class="company" href="https://www.topcv.vn/brand/congnghevietnhat">Công ty Cổ Phần
+                                    đầu tư xây dựng và Công nghệ Việt Nhật</a>
+                            </div>
+                            <label class="title-salary">
+                                15 - 20 triệu
+                            </label>
+                        </div>
+                        <div class="info">
+                            <div class="label-content">
+                                <label class="address">
+                                    Hà Nội
+                                </label>
+                                <label class="time">
+                                    Còn
+                                    <strong>23</strong>
+                                    ngày để ứng tuyển
+                                </label>
+
+                                <label class="address">
+                                    Cập nhật 1 phút trước
+                                </label>
+                            </div>
+                            <div class="icon">
+                                <button
+                                    data-redirect-to="https://www.topcv.vn/brand/congnghevietnhat/tuyen-dung/ky-su-co-dien-lam-viec-tai-cong-truong-j971530.html?ta_source=JobSearchList"
+                                    class="btn btn-apply-now">
+                                    <span>Ứng tuyển</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="category__name">
-                        Tư vấn
-                    </h4>
-                    <p class="category__caption">6.324 việc làm</p>
-                </div>
-                <div class="category-content__item">
-                    <div class="category__image">
-                        <a href="https://www.topcv.vn/tim-viec-lam-hanh-chinh-van-phong-c10023?sort=top_related"
-                            target="_blank">
-                            <img src="https://www.topcv.vn/v4/image/welcome/top-categories/marketing-truyen-thong-quang-cao.png?v=2"
-                                alt="Marketing / Truyền thông / Quảng cáo">
-                        </a>
-                    </div>
-                    <h4 class="category__name">
-                        Marketing / Truyền thông / Quảng cáo
-                    </h4>
-                    <p class="category__caption">5.244 việc làm</p>
-                </div>
-                <div class="category-content__item">
-                    <div class="category__image">
-                        <a href="https://www.topcv.vn/tim-viec-lam-hanh-chinh-van-phong-c10023?sort=top_related"
-                            target="_blank">
-                            <img src="https://www.topcv.vn/v4/image/welcome/top-categories/van-tai-kho-van.png?v=2"
-                                alt="Vận tải / Kho vận">
-                        </a>
-                    </div>
-                    <h4 class="category__name">
-                        Vận tải / Kho vận
-                    </h4>
-                    <p class="category__caption">5.235 việc làm</p>
-                </div>
-                <div class="category-content__item">
-                    <div class="category__image">
-                        <a href="https://www.topcv.vn/tim-viec-lam-hanh-chinh-van-phong-c10023?sort=top_related"
-                            target="_blank">
-                            <img src="https://www.topcv.vn/v4/image/welcome/top-categories/ke-toan-kiem-toan.png?v=2"
-                                alt="Kế toán / Kiểm toán">
-                        </a>
-                    </div>
-                    <h4 class="category__name">
-                        Kế toán / Kiểm toán
-                    </h4>
-                    <p class="category__caption">5.235 việc làm</p>
                 </div>
             </div>
         </div>
@@ -693,6 +757,7 @@
     <script src="/js/dropdownHover.js"></script>
     <script src="/js/groupDropdownLocal.js"></script>
     <script src="/js/slideshow.js"></script>
+    <script src="/js/jobContent.js"></script>
 </body>
 
 </html>
