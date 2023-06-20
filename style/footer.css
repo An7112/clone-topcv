@@ -1,0 +1,114 @@
+.footer-main{
+    background: #fff;
+    border-top: none!important;
+    line-height: unset;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.content__area.footer{
+    background-color: #fff;
+}
+
+.box-main{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__column{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-main .box-image-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    gap: 12px;
+}
+
+.footer-main .box-image-flex img {
+    width: unset;
+    object-fit: contain;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-main .box-image-flex .bct-image {
+    width: 95px;
+}
+
+.footer-main .box-contact {
+    margin-bottom: 28px;
+}
+
+.box-contact .title {
+    color: #212f3f;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer-main .box-contact span {
+    color: #6f7882;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 4px;
+}
+
+.box-contact a {
+    color: #212f3f;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-main .box-download {
+    margin-bottom: 40px;
+}
+
+.box-download .title {
+    color: #212f3f;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.box-download .btn-download-app {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-main .box-social .title {
+    color: #212f3f;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.box-social .btn-list-social {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-main .box-menu-item {
+    margin-bottom: 28px;
+}
+.footer-main .box-menu-item .title {
+    color: #212f3f;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.box-menu-item .box-menu-child a {
+    color: #4d5965;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
