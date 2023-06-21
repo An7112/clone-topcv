@@ -33,6 +33,11 @@ span {
     position: relative;
 }
 
+.list-column-title{
+    font-size: 26px;
+    font-weight: 600;
+}
+
 .nav .material-symbols-outlined {
     color: #212f3f;
     font-size: 20px;
